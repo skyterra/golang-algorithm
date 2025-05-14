@@ -1,5 +1,7 @@
 package sort
 
+import "math/rand"
+
 // QuickSort sorts the slice in ascending order using the quick sort algorithm.
 func QuickSort(a []int, p int, q int) {
 	if p >= q {
@@ -15,6 +17,10 @@ func QuickSort(a []int, p int, q int) {
 // and the second part is greater than the pivot.
 // It returns the index of the pivot.
 func partition(a []int, p, q int) int {
+	// randomly select a pivot and move it to the first position.
+	offset := rand.Intn(q - p + 1)
+	a[p], a[p+offset] = a[p+offset], a[p]
+
 	n := a[p] // pivot
 	i := p    // index of the last element in the first part.
 
