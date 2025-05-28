@@ -7,3 +7,7 @@ A collection of common algorithm implementations in Go, focusing on clarity, tes
   - Quick Sort (with test cases and sorting verification)
   - Merge Sort (with test cases and sorting verification)
   - Heap Sort (with test cases and sorting verification)
+  - 
+- **Data Structures**:
+  - Bitset (with test cases and basic operations)
+  - Bloom Filter (with test cases and basic operations)
